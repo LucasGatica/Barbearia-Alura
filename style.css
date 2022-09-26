@@ -1,0 +1,313 @@
+body{
+    font-family: "montserrat";
+}
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa{
+    
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+
+
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding:  30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+
+}
+
+.produtos li:hover{
+    border-color: #c78c19;
+    
+}
+.produtos li:hover h2{
+    font-size: 34px;
+    
+}
+
+
+.produtos li:active{
+    border-color: forestgreen;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    
+}
+
+.produto-preco{
+    margin-top: 10px;
+    font: 22px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+
+form{
+    margin: 40px;
+
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: .5s all;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 40px;
+}
+thead{
+    background-color: #cccccc;
+    color: white;
+    border: #000000 1px solid;
+    font-weight: bold;
+}
+
+
+table td, th{
+    font-size: 18px;
+    border: #000000 1px solid;
+    margin-bottom: 100px;
+    padding: 8px 15px;
+}
+
+/* css página incial*/
+
+.banner{
+
+    width: 100%;
+}
+.titulo-principal{
+    text-shadow:  1px 2px #888888;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*Limpa o Float da .utensilios*/
+
+}
+.principal {
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+    background: #fefefe;
+
+}
+
+.principal p{ /*coloca margem nos <p>s*/
+    margin: 0 0 1em;
+}
+
+.principal strong{ /* deixa os strong em negrito*/
+    font-weight: bold;
+
+}
+.principal {
+    padding: 3em 0;
+
+}
+.principal em{ /* deixa o em em italico*/
+    font-style: italic ;
+
+}
+.utensilios{
+    width: 120px;
+    margin-right    : 20px;
+    margin-bottom: 20px;
+    float: left; /*faz com que a imagem fique flutuando e não ocupe espaço na linha
+    depois é necessario usar um clear para anular o float
+    
+    
+    Tanto o float:left quanto o float: right servem para
+     que o elemento se destaque na tela, deixe de ocupar o espaço em que estava,
+     para que os outros elementos possam se posicionar ao redor dele*/
+    
+    
+}
+.mapa {/* section mapa*/
+    
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+    
+
+
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+
+.beneficios{/* essa parte não precisava ter, deixei visivel só pra reforçar a lógica*/
+    width: 100%;/*deixa a largura igual 100% da largura da main (940px)*/
+    padding: 3em 0;
+    background: #888888;
+   
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+    
+}
+
+.lista-beneficios{
+        vertical-align: top;/* alinha os elementos pelo topo*/
+        width: 40%;
+        display: inline-block;/*se nao funcionar, tirar o espaço entre os comandos no html*/
+
+}
+
+.itens{
+    line-height: 1.5;
+
+}
+.itens:before{
+    content: "★";
+}
+.itens:first-child{/*pseudo-classes */
+    font-weight: bold;
+}
+
+
+.imagem-beneficios{
+    opacity: 1;
+    width: 60%;/* deixa a largura da imagem em 60% da section beneficios*/
+    transition: 400ms;
+}
+.imagem-beneficios:hover{
+    opacity: .3;
+}
+
+
+.video{ /* Div youtube*/
+    width: 560px;
+
+ margin: 2em auto;    /*centraliza o video na div */
+    
+}
+
+@media screen and (max-width:480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos    {
+        width: auto;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        
+        width: 100%;
+    }
+    
+    .produtos li{
+        
+        width: 100%;
+        margin: 4px auto;
+        
+        
+
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    
+    .input-padrao{
+        font-size: 22px;
+    }
+    
+}
